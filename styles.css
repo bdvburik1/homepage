@@ -332,8 +332,9 @@ body.dark {
 }
 
 .projects {
-    flex: 1 1 40%;
-    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .projects__header {
@@ -342,7 +343,20 @@ body.dark {
 }
 
 .projects__item {
-    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background: var(--background-color);
+
+    transition: transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+.projects__item:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
 }
 
 .projects__name {
