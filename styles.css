@@ -192,7 +192,7 @@ body.dark {
 
 .experiences {
     flex: 1 1 60%;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .experiences__header {
@@ -329,4 +329,29 @@ body.dark {
 
 .theme-toggle:hover {
     transform: translateY(-2px);
+}
+
+.projects {
+    flex: 1 1 40%;
+    margin-right: 20px;
+}
+
+.projects__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.projects__item {
+    margin-bottom: 20px;
+}
+
+.projects__name {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projects__list {
+    color: var(--secondary-text-color);
+    padding-left: 20px;
 }
