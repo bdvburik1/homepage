@@ -145,12 +145,17 @@ body.dark {
 }
 
 .contact-info__avatar {
+    transition: transform .3s ease;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
+}
+
+.contact-info__avatar:hover {
+    transform: scale(1.05) rotate(2deg);
 }
 
 .intro {
