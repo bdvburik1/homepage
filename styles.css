@@ -261,3 +261,26 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+.skills__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills__tags span {
+    border: 1px solid var(--text-decoration-color);
+    color: var(--primary-text-color);
+    background-color: #fff8ef;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+
+.skills__tags span:hover {
+    background-color: var(--text-decoration-color);
+    color: white;
+    transform: translateY(-2px);
+}
