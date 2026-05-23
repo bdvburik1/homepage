@@ -75,7 +75,7 @@ body.dark {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (width <=576px) {
 
     .main-info,
     .contact_info_container {
@@ -132,7 +132,9 @@ body.dark {
 
 .contact-info__item:hover {
     background-color: var(--background-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 12px color-mix(in srgb,
+            var(--border-color) 30%,
+            transparent);
 }
 
 .contact-info__item:not(:last-child) {
@@ -363,7 +365,6 @@ body.dark {
     border: 1px solid var(--border-color);
     border-radius: 14px;
     background: var(--background-color);
-
     transition: transform .2s ease,
         box-shadow .2s ease,
         border-color .2s ease;
@@ -371,8 +372,9 @@ body.dark {
 
 .projects__item:hover {
     transform: translateY(-3px);
-
-    box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+    box-shadow: 0 8px 18px color-mix(in srgb,
+            var(--border-color) 20%,
+            transparent);
 }
 
 .projects__name {
