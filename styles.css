@@ -38,13 +38,13 @@ body.dark {
     max-width: 900px;
 }
 
-.fh {
+.flex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.fv {
+.flex-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,11 +78,11 @@ body.dark {
 @media screen and (width <=576px) {
 
     .main-info,
-    .contact_info_container {
+    .contact-info__container {
         flex-direction: column;
     }
 
-    .contact_info_container {
+    .contact-info__container {
         align-items: center;
     }
 
@@ -192,7 +192,7 @@ body.dark {
     fill: var(--text-decoration-color);
 }
 
-.intro_text {
+.intro__text {
     color: var(--secondary-text-color);
     text-align: justify;
 }
@@ -320,7 +320,6 @@ body.dark {
     cursor: pointer;
     user-select: none;
 }
-
 
 .skills__tags span:hover {
     background-color: var(--text-decoration-color);
