@@ -299,7 +299,10 @@ body.dark {
     font-size: 14px;
     font-weight: bold;
     transition: all .2s ease;
+    cursor: pointer;
+    user-select: none;
 }
+
 
 .skills__tags span:hover {
     background-color: var(--text-decoration-color);

@@ -1,6 +1,7 @@
 const toggle = document.getElementById("themeToggle");
 const icon = document.getElementById("themeIcon");
 const body = document.body;
+
 function updateIcon() {
     icon.textContent = body.classList.contains("dark") ? "🌞" : "🌙";
 }
@@ -16,3 +17,4 @@ toggle.addEventListener("click", () => {
     );
     updateIcon();
 });
+
