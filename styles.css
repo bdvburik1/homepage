@@ -14,6 +14,8 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --background-color: #fff8ef;
+    --border-color-2: #f5f5f5;
 }
 
 .container {
@@ -36,8 +38,8 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #f5f5f5;
+    border: 1px solid var(--border-color-2);
+    box-shadow: 1px 1px 7px 7px var(--border-color-2);
     padding: 30px 0;
     max-width: 900px;
 }
@@ -103,7 +105,7 @@ body {
 }
 
 .contact-info__item:hover {
-    background-color: #fff8ef;
+    background-color: var(--background-color);
     border-color: var(--border-color);
     transform: translateX(4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
@@ -278,7 +280,7 @@ body {
 .skills__tags span {
     border: 1px solid var(--text-decoration-color);
     color: var(--primary-text-color);
-    background-color: #fff8ef;
+    background-color: var(--background-color);
     padding: 6px 12px;
     border-radius: 16px;
     font-size: 14px;
@@ -288,6 +290,6 @@ body {
 
 .skills__tags span:hover {
     background-color: var(--text-decoration-color);
-    color: white;
+    color: var(--background-color);
     transform: translateY(-2px);
 }
