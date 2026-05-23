@@ -52,10 +52,21 @@ body.dark {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid var(--border-color-2);
-    box-shadow: 1px 1px 7px 7px var(--border-color-2);
-    padding: 30px 0;
     max-width: 900px;
+    padding: 35px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    background: color-mix(in srgb,
+            var(--background-color) 80%,
+            transparent);
+    backdrop-filter: blur(10px);
+    box-shadow:
+        0 10px 35px color-mix(in srgb,
+            var(--border-color) 40%,
+            transparent),
+        0 2px 10px color-mix(in srgb,
+            var(--border-color) 70%,
+            transparent);
 }
 
 .resume__block {
@@ -147,8 +158,8 @@ body.dark {
 .contact-info__avatar {
     transition: transform .3s ease;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
