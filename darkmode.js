@@ -21,14 +21,13 @@ toggle.addEventListener("click", () => {
 
 //easter egg
 const easterSkills = [
-    "Telepathy Debugging",
     "CSS Wizardry",
+    "DOM Whispering",
+    "Quantum Reproducibility",
+    "Bug Summoning Control",
     "JavaScript Necromancy",
     "Async Time Travel",
-    "DOM Whispering",
-    "SQL Mind Reading",
-    "Frontend Alchemy",
-    "Bug Summoning Control"
+    "Telepathy Debugging",
 ];
 
 function addSkill(name) {
